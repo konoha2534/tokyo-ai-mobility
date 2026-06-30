@@ -1,17 +1,35 @@
-# tokyo_ai_mobility
+# Tokyo AI Mobility
 
-A new Flutter project.
+AI-powered Demand Responsive Bus Platform for Tokyo
 
-## Getting Started
+## Overview
 
-This project is a starting point for a Flutter application.
+Tokyo AI Mobility is a portfolio project built with Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+The project demonstrates how AI can improve public transportation by providing a demand-responsive bus reservation system.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+This application is based on my university seminar research on AI and public transportation.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features (Planned)
+
+- User authentication
+- Bus reservation
+- AI route recommendation
+- Interactive map
+- Booking history
+- Driver application
+- Admin dashboard
+- Firebase backend
+- AI dispatch system
+
+## Tech Stack
+
+- Flutter
+- Dart
+- Firebase
+- Google Maps
+- GitHub
+
+## Project Status
+
+🚧 Under Development
