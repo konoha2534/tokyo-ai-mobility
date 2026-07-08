@@ -1,38 +1,64 @@
 # Tokyo AI Mobility
 
-AIを活用したデマンドバス予約アプリのプロトタイプです。人口減少や高齢化による公共交通の課題をテーマに、利用者の予約情報をもとに最適な運行ルートを提案するサービスを想定して開発しました。
+Tokyo AI Mobility は、東京都内のデマンド交通をテーマにした Flutter ポートフォリオアプリです。
 
-## 概要
-
-Tokyo AI Mobility は、スマートフォンやWebブラウザから乗車地・目的地を選択し、AIが待ち時間や推定乗車時間を提示するデマンドバス予約アプリです。現在はプロトタイプとして、Flutter Web 上で地図表示、乗降地選択、AIルート提案シミュレーション、予約完了表示を実装しています。
+OpenStreetMap と OSRM REST API を利用し、乗車地・目的地の選択、ルート表示、AI風の運行提案、予約完了画面までの一連の体験を実装しています。日本のIT企業選考に向けて、モバイル開発・API連携・UI設計・コード構成を示すことを目的としています。
 
 ## 主な機能
 
-- FlutterによるレスポンシブUI
-- OpenStreetMapを利用した地図表示
+- ダッシュボード画面
+- ダッシュボード指標カード
+- OpenStreetMap による地図表示
 - 乗車地・目的地の選択
-- AIルート提案のシミュレーション
-- 予測待ち時間・推定乗車時間の表示
-- 予約完了ダイアログ
-- GitHubによるソースコード管理
+- OSRM API を利用したルート表示
+- AIルート提案カード
+- 予約完了画面
+- 予約履歴画面
+- Bottom Navigation による画面切り替え
+- モバイル・Web向けのレスポンシブUI
+- Material 3 ベースのデザイン
+- ページ・ウィジェット・サービス・モデルに分割した構成
 
-## 技術スタック
+## 使用技術
 
 - Flutter
 - Dart
 - flutter_map
-- latlong2
 - OpenStreetMap
-- Git / GitHub
+- OSRM REST API
+- latlong2
+- http
 
-## 開発目的
+## ディレクトリ構成
 
-大学ゼミで取り組んでいる「AIを活用して社会課題をどのように解決できるか」という研究テーマをもとに、公共交通の維持や移動弱者支援につながるサービスを具体的なアプリとして表現することを目的に開発しました。
+```text
+lib/
+  main.dart
+  app.dart
+  data/
+  models/
+  pages/
+  services/
+  widgets/
+```
 
-## 今後の拡張予定
+## 今後の実装予定
 
-- Firebaseによる予約データ保存
-- REST APIを利用した実際の経路取得
-- ユーザー認証機能
-- 管理者向け予約一覧画面
-- 需要予測モデルとの連携
+- Firebase Auth による Google ログイン
+- Firestore による予約データ保存
+- ユーザープロフィール表示
+- Webデプロイ
+
+## 起動方法
+
+```bash
+flutter pub get
+flutter run
+```
+
+## チェック方法
+
+```bash
+flutter analyze
+flutter test
+```
