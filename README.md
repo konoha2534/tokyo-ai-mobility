@@ -1,35 +1,38 @@
 # Tokyo AI Mobility
 
-AI-powered Demand Responsive Bus Platform for Tokyo
+AIを活用したデマンドバス予約アプリのプロトタイプです。人口減少や高齢化による公共交通の課題をテーマに、利用者の予約情報をもとに最適な運行ルートを提案するサービスを想定して開発しました。
 
-## Overview
+## 概要
 
-Tokyo AI Mobility is a portfolio project built with Flutter.
+Tokyo AI Mobility は、スマートフォンやWebブラウザから乗車地・目的地を選択し、AIが待ち時間や推定乗車時間を提示するデマンドバス予約アプリです。現在はプロトタイプとして、Flutter Web 上で地図表示、乗降地選択、AIルート提案シミュレーション、予約完了表示を実装しています。
 
-The project demonstrates how AI can improve public transportation by providing a demand-responsive bus reservation system.
+## 主な機能
 
-This application is based on my university seminar research on AI and public transportation.
+- FlutterによるレスポンシブUI
+- OpenStreetMapを利用した地図表示
+- 乗車地・目的地の選択
+- AIルート提案のシミュレーション
+- 予測待ち時間・推定乗車時間の表示
+- 予約完了ダイアログ
+- GitHubによるソースコード管理
 
-## Features (Planned)
-
-- User authentication
-- Bus reservation
-- AI route recommendation
-- Interactive map
-- Booking history
-- Driver application
-- Admin dashboard
-- Firebase backend
-- AI dispatch system
-
-## Tech Stack
+## 技術スタック
 
 - Flutter
 - Dart
-- Firebase
-- Google Maps
-- GitHub
+- flutter_map
+- latlong2
+- OpenStreetMap
+- Git / GitHub
 
-## Project Status
+## 開発目的
 
-🚧 Under Development
+大学ゼミで取り組んでいる「AIを活用して社会課題をどのように解決できるか」という研究テーマをもとに、公共交通の維持や移動弱者支援につながるサービスを具体的なアプリとして表現することを目的に開発しました。
+
+## 今後の拡張予定
+
+- Firebaseによる予約データ保存
+- REST APIを利用した実際の経路取得
+- ユーザー認証機能
+- 管理者向け予約一覧画面
+- 需要予測モデルとの連携
